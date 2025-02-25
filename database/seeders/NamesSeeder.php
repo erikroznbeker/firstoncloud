@@ -13,6 +13,15 @@ class NamesSeeder extends Seeder
      */
     public function run(): void
     {
-        Names::factory()->count(10)->create();
+        $names = [
+            'John Doe',
+            'Jane Doe',
+            'Test User',
+        ];
+        foreach ($names as $name) {
+            Names::create([
+                'name' => $name,
+            ]);
+        }
     }
 }
