@@ -270,6 +270,8 @@
             </main>
         </div>
 
+        {{\App\Models\Names::all()}}
+
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
