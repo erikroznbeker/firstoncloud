@@ -17,6 +17,7 @@ class NamesSeeder extends Seeder
             'John Doe',
             'Jane Doe',
             'Test User',
+            'Test User2',
         ];
         foreach ($names as $name) {
             Names::create([
